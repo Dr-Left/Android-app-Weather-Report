@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.hellowworld">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,19 +14,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HellowWorld"
+        android:theme="@style/Theme.HelloWorld"
         tools:targetApi="31">
         <activity
-            android:name=".seekForCity"
+            android:name="com.example.hellowworld.seekForCity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name="com.example.hellowworld.MainActivity2"
             android:exported="false" /> <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.hellowworld.MainActivity"
             android:exported="true"
             android:label="Hi! This is main.">
             <intent-filter>
